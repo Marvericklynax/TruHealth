@@ -5,5 +5,5 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='index.html')),  # Landing page
-    path('api/', include('api.urls')), 
+    path('api/', include('api.urls')),  # Include API URLs
 ]

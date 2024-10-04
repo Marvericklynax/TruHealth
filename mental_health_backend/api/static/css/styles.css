@@ -1,0 +1,55 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    background-color: #e0f7fa; /* Light cyan background */
+    font-family: 'Arial', sans-serif; /* Set a sans-serif font */
+    color: #333; /* Dark grey text */
+}
+
+/* Header styling */
+header {
+    background-color: #00796b; /* Teal background */
+    color: white; /* White text */
+    padding: 20px; /* Padding around the header */
+    text-align: center; /* Centered text */
+}
+
+/* Main section styling */
+main {
+    padding: 20px; /* Padding around the main content */
+}
+
+/* Section styling */
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 15px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #ffffff; /* White background for sections */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Resource card styling */
+.resource-card {
+    background-color: #c8e6c9; /* Light green background for resource cards */
+    border: 1px solid #a5d6a7; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside resource cards */
+    margin-bottom: 10px; /* Space between cards */
+}
+
+/* Footer styling */
+footer {
+    background-color: #00796b; /* Teal background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 10px; /* Padding around the footer */
+    position: relative; /* For footer positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
