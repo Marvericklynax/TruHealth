@@ -1,59 +1,121 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Truhealth</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TruHealth - Mental Health Support</title>
+
+    <!-- Favicon -->
     {% load static %}
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-</head>
-<body>
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'Assets/favicon/apple-touch-icon.png' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'Assets/favicon/favicon-16x16.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'Assets/favicon/favicon-32x32.png' %}" />
+    <link rel="manifest" href="{% static 'Assets/favicon/site.webmanifest' %}" />
+    <link rel="mask-icon" href="{% static 'Assets/favicon/safari-pinned-tab.svg' %}" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Comfortaa:wght@300&family=Montserrat:wght@100&family=Patrick+Hand&family=Poppins:wght@200;300&family=Raleway:wght@300&family=Ubuntu:wght@300&family=Zen+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <!-- Static CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+    <!-- External JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  
+  <body class="main" onload="loaded()">
+    <div id="loader"></div>
+
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to the Mental Health Support App</h1>
-        <p>Access resources for mental health support.</p>
+      <a href="#"><img src="{% static 'Assets/Images/TruHealth.png' %}" alt="TruHealth Logo" /></a>
+      <nav class="navbar">
+        <div class="content">
+          <ul class="menu-list">
+            <div class="icon cancel-btn">
+              <i class="fas fa-times"></i>
+            </div>
+            <li class="items alt"><a href="./index.html">Home</a></li>
+            <li class="items"><a href="./info.html">Info</a></li>
+            <li class="items"><a href="./games.html">Fun</a></li>
+            <li class="items"><a href="./gethelp.html">Get Help</a></li>
+          </ul>
+          <div class="icon menu-btn">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
     </header>
-    
+
+    <!-- Main Section -->
     <main>
-        <section>
-            <h2>Understanding Mental Health</h2>
-            <p>Mental health includes our emotional, psychological, and social well-being.</p>
-        </section>
-    
-        <section>
-            <h2>Common Conditions</h2>
-            <ul>
-                <li>Anxiety Disorders</li>
-                <li>Depression</li>
-                <li>Bipolar Disorder</li>
-                <li>Schizophrenia</li>
-            </ul>
-        </section>
-    
-        <section>
-            <h2>Tips for Mental Wellness</h2>
-            <ol>
-                <li>Practice mindfulness and meditation.</li>
-                <li>Stay physically active.</li>
-                <li>Connect with friends and family.</li>
-                <li>Seek professional help when needed.</li>
-            </ol>
-        </section>
-    
-        <section>
-            <h2>Resources and Support</h2>
-            <div class="resource-card">
-                <h3>National Suicide Prevention Lifeline</h3>
-                <p>Call 1-800-273-TALK (1-800-273-8255)</p>
-            </div>
-            <div class="resource-card">
-                <h3>Mindfulness Resources</h3>
-                <p>Visit <a href="https://www.mindful.org/" target="_blank">Mindful.org</a> for tips and practices.</p>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="wid-main container">
+          <h1>MENTAL HEALTH IS IMPORTANT</h1>
+          <p>
+            The prolonged pandemic has resulted in people feeling increasingly isolated, which is likely to worsen their
+            mental health. Constant worries about how the future will unfold and the feelings of helplessness it brings
+            have undoubtedly imprinted themselves upon us. This website aims to provide information for coping and for taking care of your mental health.
+          </p>
+          <button class="btn btn-primary">
+            <span><a href="./info.html">Read more</a></span>
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <h2>Understanding Mental Health</h2>
+        <p>Mental health includes our emotional, psychological, and social well-being.</p>
+      </section>
+
+      <section>
+        <h2>Common Conditions</h2>
+        <ul>
+          <li>Anxiety Disorders</li>
+          <li>Depression</li>
+          <li>Bipolar Disorder</li>
+          <li>Schizophrenia</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Tips for Mental Wellness</h2>
+        <ol>
+          <li>Practice mindfulness and meditation.</li>
+          <li>Stay physically active.</li>
+          <li>Connect with friends and family.</li>
+          <li>Seek professional help when needed.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Resources and Support</h2>
+        <div class="resource-card">
+          <h3>National Suicide Prevention Lifeline</h3>
+          <p>Call 1-800-273-TALK (1-800-273-8255)</p>
+        </div>
+        <div class="resource-card">
+          <h3>Mindfulness Resources</h3>
+          <p>Visit <a href="https://www.mindful.org/" target="_blank">Mindful.org</a> for tips and practices.</p>
+        </div>
+      </section>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Mental Health Support App</p>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <p>Made with <i class="fa-solid fa-heart pulse"></i> by TruHealth</p>  
     </footer>
-</body>
+
+    <!-- External Script -->
+    <script src="{% static 'Script/script.js' %}"></script>
+  </body>
 </html>

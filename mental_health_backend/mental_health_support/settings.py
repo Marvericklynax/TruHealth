@@ -76,7 +76,15 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
+# Static files settings
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'api/static'),
+    os.path.join(BASE_DIR, 'static'),  # Common folder for all static files
 ]
+
+# Media files settings
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Ensure static files are collected properly in production (run 'collectstatic')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
